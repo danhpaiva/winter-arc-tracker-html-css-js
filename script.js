@@ -134,10 +134,13 @@
   // ---------- Render: countdown ----------
 
   function renderCountdown() {
+    const labelEl = document.getElementById("countdownLabel");
     const numberEl = document.getElementById("countdownNumber");
     const subEl = document.getElementById("countdownSub");
     const totalDays = arcDays.length;
     const msPerDay = 86400000;
+
+    labelEl.textContent = `Winter Arc ${arcStart.getFullYear()}/${arcEnd.getFullYear()}`;
 
     if (today < arcStart) {
       const daysUntilStart = Math.round((arcStart - today) / msPerDay);
