@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Winter Arc Tracker</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="countdown-header">
+      <p class="countdown-label">Winter Arc 2026</p>
+      <h1 class="countdown-number" id="countdownNumber">--</h1>
+      <p class="countdown-sub" id="countdownSub">carregando...</p>
+    </header>
+
+    <main class="pillars-grid" id="pillarsGrid">
+      <!-- pillar cards injected by JS -->
+    </main>
+
+    <section class="heatmap-section">
+      <div class="heatmap-header">
+        <h2>Progresso dos 92 dias</h2>
+        <div class="heatmap-legend" id="heatmapLegend"></div>
+      </div>
+      <div class="heatmap-grid" id="heatmapGrid"></div>
+      <div class="heatmap-tooltip" id="heatmapTooltip"></div>
+    </section>
+
+    <footer class="stats-footer">
+      <div class="stat-box">
+        <span class="stat-value" id="statOverall">0%</span>
+        <span class="stat-label">Conclusão geral</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-value" id="statBestPillar">-</span>
+        <span class="stat-label">Melhor pilar</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-value" id="statTotalDays">0</span>
+        <span class="stat-label">Dias totais completados</span>
+      </div>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
